@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  <title>Login</title>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+      <form action="#" class="login-form">
+        <h1>Login</h1>
+
+        <div class="txtb">
+          <input type="text">
+          <span data-placeholder="Username"></span>
+        </div>
+
+        <div class="txtb">
+          <input type="password">
+          <span data-placeholder="Password"></span>
+        </div>
+
+        <input type="submit" class="logbtn" value="Login">
+        <div class="bottom-text">
+          Forget Password? Click <a href="signup.html">Here</a>
+        </div>
+
+
+        <div class="bottom-text">
+          Don't have account? <a href="signup.html">Sign up</a>
+        </div>
+        <div style="margin-top: 10px">Or login using - </div>
+        <a href="#" class="btn azm-social azm-size-64 azm-circle azm-facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="btn azm-social azm-size-64 azm-circle azm-google"><i class="fa fa-google"></i></a>
+        <a href="#" class="btn azm-social azm-size-64 azm-circle azm-twitter"><i class="fa fa-twitter"></i></a>
+
+      </form>
+
+      <script type="text/javascript">
+      $(".txtb input").on("focus",function(){
+        $(this).addClass("focus");
+      });
+
+      $(".txtb input").on("blur",function(){
+        if($(this).val() == "")
+        $(this).removeClass("focus");
+      });
+
+      </script>
+
+
+  </body>
+</html>
